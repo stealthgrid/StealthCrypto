@@ -42,7 +42,7 @@ contract StealthGridToken {
      *
      * Initializes contract with initial supply tokens to the creator of the contract
      */
-    function WaterToken(
+    function StealthGridToken(
         uint256 initialSupply,
         string tokenName,
         string tokenSymbol
@@ -188,7 +188,7 @@ contract MyAdvancedToken is owned, StealthGridToken {
         uint256 initialSupply,
         string tokenName,
         string tokenSymbol
-    ) WaterToken(initialSupply, tokenName, tokenSymbol) public {}
+    ) StealthGridToken(initialSupply, tokenName, tokenSymbol) public {}
 
     /* Internal transfer, only can be called by this contract */
     function _transfer(address _from, address _to, uint _value) internal {
